@@ -6,6 +6,7 @@ import Reviews from "../components/Reviews";
 import UseCases from "../components/UseCases";
 import ClosureUI from "../components/ClosureUI";
 import Packages from '../assets/images/packages.jpg'
+import { useState } from "react";
 
 const Home = () => {
 	const [showForm, setShowForm] = useState(false);
