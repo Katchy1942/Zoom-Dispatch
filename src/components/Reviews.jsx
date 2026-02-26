@@ -5,21 +5,21 @@ const Reviews = () => {
       {
          id: 1,
          firstName: "Chioma",
-         lastName: "Adebayo",
+         lastName: "Igwe",
          business: "Fresh Bakes",
          review: "Reliability is key for my cake business. Zoom Dispatch handles my delicate deliveries with care, and they've never missed a deadline."
       },
       {
          id: 2,
-         firstName: "Tunde",
+         firstName: "Onah",
          lastName: "Williams",
          business: "TechPoint Gadgets",
          review: "Fastest delivery service in Lagos. My customers are always impressed by how quickly they receive their orders. Highly recommended!"
       },
       {
          id: 3,
-         firstName: "Aisha",
-         lastName: "Bello",
+         firstName: "Felix",
+         lastName: "Ugwu",
          business: "Zaria Fashion House",
          review: "I used to struggle with logistics until I found Zoom. Their riders are professional, and the app makes booking pickups so easy."
       },
@@ -32,7 +32,7 @@ const Reviews = () => {
       },
       {
          id: 5,
-         firstName: "Sarah",
+         firstName: "Kolu",
          lastName: "Mensah",
          business: "Organic Glow",
          review: "My customers love the same-day delivery option. It's helped me boost sales and build trust. Zoom Dispatch is a partner I can rely on."

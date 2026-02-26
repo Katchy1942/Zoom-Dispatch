@@ -15,7 +15,7 @@ const HeroSection = () => {
                <h1 className="text-5xl font-bold tracking-tight leading-16 mb-4 text-white">Delivery at the speed of <span className="bg-[#FF0000] text-[#101010] pb-1">Zoom.</span></h1>
                <p className="text-sm font-medium text-[#F4F4F4]/70 mb-12">We didn't name ourselves Zoom Dispatch for nothing. Experience the fastest, most reliable courier service in Enugu.</p>
                <div className="flex flex-col gap-1">
-                  <button className="bg-[#FF0000] w-fit text-[#101010] px-6 py-2.5 text-[18px] font-bold cursor-pointer rounded-full tracking-wide hover:bg-[#FF0000]/90 transition-colors">Let's help you deliver</button>
+                  <button className="bg-[#FF0000] w-fit text-[#101010] px-6 py-2.5 text-base font-bold cursor-pointer rounded-full hover:bg-[#FF0000]/90 transition-colors">Let's help you deliver</button>
                   <span className="text-[10px] text-[#F4F4F4]/50 ml-1">Currently serving Enugu, Nigeria.</span>
                </div>
             </div>

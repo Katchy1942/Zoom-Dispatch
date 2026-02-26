@@ -61,7 +61,7 @@ const Header = () => {
 				visible ? 'translate-y-0' : '-translate-y-full'
 			} ${
 				scrolled 
-					? 'bg-[#2B2928]/80 backdrop-blur-md shadow-sm' 
+					? 'bg-[#2B2928]/40 backdrop-blur-lg shadow-sm' 
 					: 'bg-transparent'
 			}`}
 		> 
