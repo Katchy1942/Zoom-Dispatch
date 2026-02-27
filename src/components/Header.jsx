@@ -83,7 +83,7 @@ const Header = () => {
 										<span className='hover:text-[#FF0000]'>{link.name}</span>
 										<ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" />
 										
-										<ul className="absolute top-full right-0 mt-4 bg-[#101010] border border-[#FF0000]/20 rounded-xl py-2 shadow-lg shadow-black/50 overflow-hidden transition-all duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible transform origin-top z-50 min-w-[200px]">
+										<ul className="absolute top-full right-0 mt-4 bg-[#101010] border border-[#FF0000]/20 rounded-xl shadow-md shadow-black/50 overflow-hidden transition-all duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible transform origin-top z-50 min-w-[200px]">
 											{[
 												{ name: 'Bike Owners', path: '/bike-owners' },
 												{ name: 'Businesses', path: '/businesses' }
@@ -91,7 +91,7 @@ const Header = () => {
 												<li key={item.name}>
 													<Link 
 														to={item.path}
-														className="block px-5 py-2.5 text-sm font-medium text-[#F4F4F4] hover:text-[#FF0000] hover:bg-white/5 transition-colors whitespace-nowrap"
+														className="block px-5 py-3 text-sm font-medium text-[#F4F4F4] hover:text-[#FF0000] hover:bg-[#1a1a1a] transition-colors whitespace-nowrap"
 													>
 														{item.name}
 													</Link>

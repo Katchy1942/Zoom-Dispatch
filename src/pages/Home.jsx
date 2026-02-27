@@ -68,7 +68,7 @@ const Home = () => {
 							</p>
 							<div className="flex flex-col items-center justify-center gap-1">
 								<div className="flex items-center gap-2">
-									<button onClick={() => setShowForm(true)} className="bg-[#FF0000] w-fit text-[#101010] px-6 py-3 text-base font-bold cursor-pointer rounded-full hover:bg-[#FF0000]/90 transition-colors">Sign up now</button>
+									<button onClick={() => setShowForm(true)} className="bg-[#FF0000] w-fit text-[#101010] px-6 py-2.5 text-base font-bold cursor-pointer rounded-full hover:bg-[#FF0000]/90 transition-colors">Sign up now</button>
 									<Link to="/bike-owners" className="border border-[#ff0000] text-base font-bold cursor-pointer px-6 py-3 rounded-full">Learn More</Link>
 								</div>
 								<span className="text-[10px] text-[#F4F4F4]/50 text-center ml-1">Before registering, please ensure that you have all the required documents</span>

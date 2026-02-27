@@ -50,7 +50,7 @@ const Sidebar = ({ navLinks }) => {
 												<span className="hover:text-[#FF0000] transition-colors">{link.name}</span>
 												<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${partnerOpen ? 'rotate-180' : ''}`} />
 											</div>
-											<div className={`flex flex-col gap-4 pl-4 overflow-hidden transition-all duration-300 ${partnerOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
+											<div className={`flex flex-col gap-4 pl-4 overflow-hidden border-l border-[#FF0000]/20 transition-all duration-300 ${partnerOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
 												<Link to="/bike-owners" className="text-base text-[#F4F4F4]/70 hover:text-[#FF0000] transition-colors" onClick={() => setIsOpen(false)}>
 													Bike Owners
 												</Link>

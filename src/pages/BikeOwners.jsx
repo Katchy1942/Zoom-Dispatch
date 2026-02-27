@@ -1,30 +1,9 @@
 import { useState } from 'react';
-import OurOfferings from "../components/OurOfferings";
 import StepCardStack from "../components/StepCardStack";
 import Rider from '../assets/images/bike1.jpg'
 import { AnimatePresence } from 'framer-motion';
 import RegistrationForm from '../components/RegistrationForm'
-
-const steps = [
-	{
-		id: 1,
-		title: "Download the App",
-		desc: "Get Zoom Dispatch from the App Store or Google Play. It's free and takes less than a minute to install.",
-		img: ''
-	},
-	{
-		id: 2,
-		title: "Create Your Profile",
-		desc: "Sign up with your details, upload your documents, and get verified within 24 hours. Simple and hassle-free.",
-		img: ''
-	},
-	{
-		id: 3,
-		title: "Start Earning",
-		desc: "Go online, accept delivery requests, and start earning immediately. You choose when and where you ride.",
-		img: ''
-	},
-];
+import { steps } from './Businesses';
 
 const BikeOwners = () => {
 	const [showForm, setShowForm] = useState(false);
@@ -40,28 +19,22 @@ const BikeOwners = () => {
 				
 				<div className="relative z-10 flex w-full gap-6">
 					<div className="w-full md:w-[55%] lg:w-1/2 flex flex-col items-start justify-center min-h-[calc(100vh-4rem)] pt-12">
-						<h1 className="text-5xl font-bold tracking-tight leading-16 mb-4 text-white">
+						<h1 className="text-5xl font-bold tracking-tight md:leading-16 mb-4 text-white">
 							Got a bike or already a rider?
 						</h1>
 						<p className="text-sm font-medium text-[#F4F4F4]/70 mb-12">
 							Join our growing community of bike riders and earn money on your own terms.
 						</p>
 						<div className="flex flex-col gap-1">
-							<button onClick={() => setShowForm(true)} className="bg-[#FF0000] w-fit text-[#101010] px-6 py-3 text-sm font-bold cursor-pointer rounded-full tracking-wide hover:bg-[#FF0000]/90 transition-colors">Sign up now</button>
+							<button onClick={() => setShowForm(true)} className="bg-[#FF0000] w-fit text-[#101010] px-6 py-3 text-base font-bold cursor-pointer rounded-full hover:bg-[#FF0000]/90 transition-colors">Sign up now</button>
 							<span className="text-[10px] text-[#F4F4F4]/50 ml-1">Before registering, please ensure that you have all the required documents</span>
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<div>
-				<div className='py-0 md:py-24'>
-					<OurOfferings title="Why Join Zoom Dispatch?" />
-				</div>
 			</div>			
 
 			<div className="min-h-screen flex flex-col items-center justify-center pb-0 md:pb-24">
-				<h2 className="text-3xl font-medium tracking-tight text-center border-b border-[#FF0000]/20 max-w-fit mx-auto pb-2 mb-16">
+				<h2 className="text-3xl font-medium tracking-tight text-center border-b border-[#FF0000]/20 max-w-fit mx-auto pb-2 mb-20">
 					Just 3 steps to get started
 				</h2>
 				<StepCardStack steps={steps} />
@@ -70,7 +43,7 @@ const BikeOwners = () => {
 			<div className='w-auto min-h-dvh bg-[#0a0a0a] overflow-hidden flex flex-col justify-end md:justify-center relative mx-3 mb-24 rounded-4xl'>
 				<div className='w-full md:w-[45%] p-8 sm:p-10 md:p-20 z-20 flex flex-col justify-center relative pb-16 md:pb-20'>
 					<h2 className='text-5xl font-medium text-[#ff0000] mb-6 tracking-tight'>
-						Boost your fleet earnings<br />
+						Boost your Bike's earnings<br />
 						with Zoom Dispatch
 					</h2>
 					
@@ -80,7 +53,7 @@ const BikeOwners = () => {
 					
 					<button 
 						onClick={() => setShowForm(true)} 
-						className='bg-[#ff0000] text-[#101010] px-12 py-4 tracking-wide rounded-full font-bold text-md w-fit hover:bg-[#ff0000]/90 transition-all cursor-pointer'
+						className='bg-[#FF0000] w-fit text-[#101010] px-6 py-2.5 text-base font-bold cursor-pointer rounded-full hover:bg-[#FF0000]/90 transition-colors'
 					>
 						Sign up now
 					</button>

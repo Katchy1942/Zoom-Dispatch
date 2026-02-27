@@ -26,14 +26,14 @@ const StepCardStack = ({ steps }) => {
 
 	// Card layout configs: front card is last in array (highest z)
 	const cardConfigs = [
-		{ scale: 0.88, y: -40, x: 24, rotate: 3, opacity: 0.4, zIndex: 1 },
-		{ scale: 0.94, y: -20, x: 12, rotate: 1.5, opacity: 0.7, zIndex: 2 },
+		{ scale: 0.88, y: -70, x: 40, rotate: 6, opacity: 0.4, zIndex: 1 },
+		{ scale: 0.94, y: -35, x: 20, rotate: 3, opacity: 0.7, zIndex: 2 },
 		{ scale: 1, y: 0, x: 0, rotate: 0, opacity: 1, zIndex: 3 },
 	];
 
 	return (
 		<div
-			className="relative w-[85vw] md:w-[400px] h-[500px]"
+			className="relative w-[85vw] md:w-[400px] h-[500px] mr-8"
 		>
 			<AnimatePresence mode="sync">
 				{order.map((stepIndex, positionIndex) => {
@@ -43,7 +43,7 @@ const StepCardStack = ({ steps }) => {
 					return (
 						<motion.div
 							key={step.id}
-							className="absolute inset-0 w-full h-full bg-[#1A1A1A] rounded-3xl p-6 flex flex-col shadow-inner shadow-[#FF0000]/20 border border-[#FF0000]/10"
+							className="absolute inset-0 w-full h-full bg-[#1A1A1A] rounded-3xl p-6 flex flex-col border border-[#FF0000]/10"
 							initial={false}
 							animate={{
 								scale: config.scale,
@@ -67,8 +67,8 @@ const StepCardStack = ({ steps }) => {
 								</div>
 							</div>
 
-							<div className="w-full h-48 bg-[#FF0000]/10 rounded-2xl mb-6 flex items-center justify-center overflow-hidden relative">
-								<div className="absolute inset-0 bg-linear-to-br from-[#FF0000]/5 to-transparent" />
+							<div className="w-full aspect-square rounded-2xl mb-6 flex items-center justify-center overflow-hidden relative">
+								<img src={step.img} alt={step.title} className="w-full h-full object-cover" />
 							</div>
 
 							<div className="flex grow flex-col">
