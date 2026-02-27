@@ -2,7 +2,7 @@ import Rider from '../assets/images/rider.avif'
 
 const RiderHighlight = () => {
    return (
-      <div className="h-screen w-full gap-8 md:gap-0 flex flex-col-reverse md:flex items-center px-6 md:px-10 justify-center">
+      <div className="h-screen w-full gap-8 md:gap-0 flex flex-col-reverse md:flex-row items-center px-6 md:px-10 justify-center">
          <div className="w-full md:w-1/2">
             <div className="flex flex-col justify-center gap-8">
                <p className="text-sm font-medium text-[#F4F4F4]/70 max-w-md">Our riders are the heartbeat of our operation. Trained, vetted, and dedicated to getting your package to its destination safely and swiftly.</p>
