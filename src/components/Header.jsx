@@ -107,7 +107,7 @@ const Header = () => {
 
 				<div className="flex items-center gap-4">
 					<div className="hidden sm:block">
-						<button className="bg-[#FF0000] w-fit text-[#101010] px-6 py-2.5 text-sm font-bold cursor-pointer rounded-full tracking-wide hover:bg-[#FF0000]/90 transition-colors">Let's help you deliver</button>
+						<a target='_blank' rel='noopener noreferrer' href="https://wa.me/2349052452642" className="bg-[#FF0000] w-fit text-[#101010] px-6 py-2.5 text-sm font-bold cursor-pointer rounded-full tracking-wide hover:bg-[#FF0000]/90 transition-colors">Let's help you deliver</a>
 					</div>
 					<Sidebar navLinks={navLinks} />
 				</div>

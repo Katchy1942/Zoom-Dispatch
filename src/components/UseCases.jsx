@@ -60,9 +60,9 @@ const UseCases = () => {
                      <p className="text-sm font-medium text-[#101010] max-w-md">
                         {useCases[activeTab].text}
                      </p>
-                     <button className="bg-[#101010] hover:bg-[#101010]/90 cursor-pointer text-[#ff2424] text-base px-6 py-3 rounded-full font-bold w-fit">
+                     <a target='_blank' rel='noopener noreferrer' href={useCases[activeTab].id === 3 ? "/place-an-order" : "https://wa.me/2349052452642"} className="bg-[#101010] hover:bg-[#101010]/90 cursor-pointer text-[#ff2424] text-base px-6 py-3 rounded-full font-bold w-fit">
                         {useCases[activeTab].id === 3 ? "View Available Stores" : "Let's Help You Deliver"}
-                     </button>
+                     </a>
                   </div>
                </div>
                <div className="w-full md:w-1/2 relative">

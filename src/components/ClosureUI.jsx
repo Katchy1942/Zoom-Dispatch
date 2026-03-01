@@ -13,12 +13,9 @@ const ClosureUI = () => {
                Try it out today!
             </p>
             
-            <button 
-               onClick={() => setShowForm(true)} 
-               className='bg-[#ff0000] text-[#101010] px-12 py-4 rounded-full font-bold text-lg w-fit hover:bg-[#ff0000]/90 transition-all cursor-pointer'
-            >
+            <a target='_blank' rel='noopener noreferrer' href="https://wa.me/2349052452642" className='bg-[#ff0000] text-[#101010] px-12 py-4 rounded-full font-bold text-lg w-fit hover:bg-[#ff0000]/90 transition-all cursor-pointer'>
                Let's help you deliver
-            </button>
+            </a>
          </div>
          
          <div className='absolute inset-0 md:left-auto md:right-0 w-full md:w-[65%] pointer-events-none z-0'>

@@ -6,7 +6,7 @@ const RiderHighlight = () => {
          <div className="w-full md:w-1/2">
             <div className="flex flex-col justify-center gap-8">
                <p className="text-sm font-medium text-[#F4F4F4]/70 max-w-md">Our riders are the heartbeat of our operation. Trained, vetted, and dedicated to getting your package to its destination safely and swiftly.</p>
-               <button className="bg-[#FF0000] text-[#1A1A1A] text-base px-6 py-3 rounded-full font-bold w-fit">Let's help you deliver</button>
+               <a target='_blank' rel='noopener noreferrer' href="https://wa.me/2349052452642" className="bg-[#FF0000] text-[#1A1A1A] text-base px-6 py-3 rounded-full font-bold w-fit">Let's help you deliver</a>
             </div>
          </div>
          <div className="w-full md:w-1/2 relative">

@@ -64,9 +64,9 @@ const Sidebar = ({ navLinks }) => {
 							))}
 						</ul>
 						<div className="mt-8">
-							<button className="bg-[#FF0000] w-full text-[#101010] px-6 py-3 text-base font-bold rounded-full hover:bg-[#FF0000]/90 transition-colors cursor-pointer">
+							<a target='_blank' rel='noopener noreferrer' href="https://wa.me/2349052452642" className="bg-[#FF0000] w-full text-[#101010] px-6 py-3 text-base font-bold rounded-full hover:bg-[#FF0000]/90 transition-colors cursor-pointer">
 								Let's help you deliver
-							</button>
+							</a>
 						</div>
 					</div>
 				</>, document.body
