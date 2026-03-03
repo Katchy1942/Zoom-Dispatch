@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '/full-logo.png'
+import Logo from '/full-logo-white.png'
 import { ChevronDown } from 'lucide-react';
 import Sidebar from './Sidebar';
 
