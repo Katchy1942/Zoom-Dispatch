@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react';
+import DeliveryForm from './DeliveryForm';
 
 const ClosureUI = () => {
+   const [isDeliveryOpen, setIsDeliveryOpen] = useState(false);
+
    return (
       <div className='w-auto min-h-dvh bg-[#0a0a0a] overflow-hidden flex flex-col justify-end md:justify-center relative mx-3 mb-24 rounded-4xl'>
          <div className='w-full md:w-[45%] p-8 sm:p-10 md:p-20 z-20 flex flex-col justify-center relative pb-16 md:pb-20'>
@@ -13,9 +16,9 @@ const ClosureUI = () => {
                Try it out today!
             </p>
             
-            <a target='_blank' rel='noopener noreferrer' href="https://wa.me/2349052452642" className='bg-[#ff0000] text-[#101010] px-12 py-4 rounded-full font-bold text-lg w-fit hover:bg-[#ff0000]/90 transition-all cursor-pointer'>
+            <button onClick={() => setIsDeliveryOpen(true)} className='bg-[#ff0000] text-[#101010] px-12 py-4 rounded-full font-bold text-lg w-fit hover:bg-[#ff0000]/90 transition-all cursor-pointer'>
                Let's help you deliver
-            </a>
+            </button>
          </div>
          
          <div className='absolute inset-0 md:left-auto md:right-0 w-full md:w-[65%] pointer-events-none z-0'>
@@ -28,6 +31,7 @@ const ClosureUI = () => {
                className='w-full h-full object-cover object-center translate-x-0 md:translate-x-12 opacity-60 md:opacity-80'
             />
          </div>
+         {isDeliveryOpen && <DeliveryForm onClose={() => setIsDeliveryOpen(false)} />}
       </div>
    )
 }

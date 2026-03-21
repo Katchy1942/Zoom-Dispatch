@@ -3,9 +3,11 @@ import Deliveries from '../assets/images/deliveries1.jpg'
 import PlaceOrders from '../assets/images/place-orders2.jpg'
 import RunErrands from '../assets/images/place-orders.jpg'
 import Businesses from '../assets/images/businesses.jpg'
+import DeliveryForm from './DeliveryForm';
 
 const UseCases = () => {
    const [activeTab, setActiveTab] = useState(0);
+   const [isDeliveryOpen, setIsDeliveryOpen] = useState(false);
 
    const useCases = [
       {
@@ -60,9 +62,15 @@ const UseCases = () => {
                      <p className="text-sm font-medium text-[#101010] max-w-md">
                         {useCases[activeTab].text}
                      </p>
-                     <a target='_blank' rel='noopener noreferrer' href={useCases[activeTab].id === 3 ? "/place-an-order" : "https://wa.me/2349052452642"} className="bg-[#101010] hover:bg-[#101010]/90 cursor-pointer text-[#ff2424] text-base px-6 py-3 rounded-full font-bold w-fit">
-                        {useCases[activeTab].id === 3 ? "View Available Stores" : "Let's Help You Deliver"}
-                     </a>
+                     {useCases[activeTab].id === 3 ? (
+                        <a target='_blank' rel='noopener noreferrer' href="/place-an-order" className="bg-[#101010] hover:bg-[#101010]/90 cursor-pointer text-[#ff2424] text-base px-6 py-3 rounded-full font-bold w-fit">
+                           View Available Stores
+                        </a>
+                     ) : (
+                        <button onClick={() => setIsDeliveryOpen(true)} className="bg-[#101010] hover:bg-[#101010]/90 cursor-pointer text-[#ff2424] text-base px-6 py-3 rounded-full font-bold w-fit">
+                           Let's Help You Deliver
+                        </button>
+                     )}
                   </div>
                </div>
                <div className="w-full md:w-1/2 relative">
@@ -70,6 +78,7 @@ const UseCases = () => {
                   <img src={useCases[activeTab].img} alt={useCases[activeTab].name} className="w-full md:aspect-square aspect-4/3 object-cover bg-[#101010]/20 rounded-3xl" />
                </div>
             </div>
+            {isDeliveryOpen && <DeliveryForm onClose={() => setIsDeliveryOpen(false)} />}
          </div>
       </div>
    )

@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import Logo from '/full-logo-white.png'
 import { ChevronDown } from 'lucide-react';
 import Sidebar from './Sidebar';
+import DeliveryForm from './DeliveryForm';
 
 const Header = () => {
 	const [scrolled, setScrolled] = useState(false);
 	const [visible, setVisible] = useState(true);
 	const [lastScrollY, setLastScrollY] = useState(0);
+	const [isDeliveryOpen, setIsDeliveryOpen] = useState(false);
 
 
 	const navLinks = [
@@ -107,11 +109,12 @@ const Header = () => {
 
 				<div className="flex items-center gap-4">
 					<div className="hidden sm:block">
-						<a target='_blank' rel='noopener noreferrer' href="https://wa.me/2349052452642" className="bg-[#FF0000] w-fit text-[#101010] px-6 py-2.5 text-sm font-bold cursor-pointer rounded-full tracking-wide hover:bg-[#FF0000]/90 transition-colors">Let's help you deliver</a>
+						<button onClick={() => setIsDeliveryOpen(true)} className="bg-[#FF0000] w-fit text-[#101010] px-6 py-2.5 text-sm font-bold cursor-pointer rounded-full tracking-wide hover:bg-[#FF0000]/90 transition-colors">Let's help you deliver</button>
 					</div>
 					<Sidebar navLinks={navLinks} />
 				</div>
 			</nav>
+			{isDeliveryOpen && <DeliveryForm onClose={() => setIsDeliveryOpen(false)} />}
 		</div>
 	);
 };

@@ -12,7 +12,7 @@ const About = () => {
 				</div>
 			</div>
 			<div className="h-screen w-full flex flex-col md:flex-row justify-center items-center pt-20 gap-6 px-4 md:px-10">
-				<div className="md:w-2/3 w-full aspect-square">
+				<div className="md:w-1/3 w-full aspect-square">
 					<img src={CEO} alt="CEO" className="w-full h-full object-cover rounded-2xl" />
 				</div>
 				<div className="flex flex-col justify-center">

@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import DeliveryForm from './DeliveryForm';
 
 const Sidebar = ({ navLinks }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [partnerOpen, setPartnerOpen] = useState(false);
+	const [isDeliveryOpen, setIsDeliveryOpen] = useState(false);
 
 	useEffect(() => {
 		if (isOpen) {
@@ -64,11 +66,12 @@ const Sidebar = ({ navLinks }) => {
 							))}
 						</ul>
 						<div className="mt-8">
-							<a target='_blank' rel='noopener noreferrer' href="https://wa.me/2349052452642" className="bg-[#FF0000] w-full text-[#101010] px-6 py-3 text-base font-bold rounded-full hover:bg-[#FF0000]/90 transition-colors cursor-pointer">
+							<button onClick={() => { setIsOpen(false); setIsDeliveryOpen(true); }} className="bg-[#FF0000] w-full text-[#101010] px-6 py-3 text-base font-bold rounded-full hover:bg-[#FF0000]/90 transition-colors cursor-pointer">
 								Let's help you deliver
-							</a>
+							</button>
 						</div>
 					</div>
+					{isDeliveryOpen && <DeliveryForm onClose={() => setIsDeliveryOpen(false)} />}
 				</>, document.body
 			)}
 		</div>
