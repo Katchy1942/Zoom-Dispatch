@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import OurOfferings from "../components/OurOfferings";
 import StepCardStack from "../components/StepCardStack";
-import Packages from '../assets/images/packages.jpg'
+import Packages from '../assets/images/businesses.jpg'
 import { AnimatePresence } from 'framer-motion';
 import RegistrationForm from '../components/RegistrationForm';
 import ButtonScreenshot from '../assets/images/button-screenshot.png'
