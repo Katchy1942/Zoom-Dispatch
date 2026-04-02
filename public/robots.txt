@@ -1,0 +1,6 @@
+# robots.txt for Zoom Dispatch
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://zoomdispatch.com/sitemap.xml

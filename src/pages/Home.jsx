@@ -8,26 +8,32 @@ import { useState } from "react";
 import { AnimatePresence } from 'framer-motion';
 import RegistrationForm from '../components/RegistrationForm';
 import Partnership from "../components/Partnership";
+import SEO from '../components/SEO';
 
 const Home = () => {
-	const [showForm, setShowForm] = useState(false);
+   const [showForm, setShowForm] = useState(false);
 
-	return (
-		<div>
-			<HeroSection />
-			<OurOfferings />
-			<RiderHighlight />
-			<UseCases />
-			<Reviews />
-			<Partnership />
-			<ClosureUI />
-			<AnimatePresence>
-				{showForm && (
-					<RegistrationForm onClose={() => setShowForm(false)} />
-				)}
-			</AnimatePresence>
-		</div>
-	)
+   return (
+      <div>
+         <SEO 
+            title="Home"
+            description="Zoom Dispatch - Your premier partner for fast, secure, and reliable delivery services."
+            keywords="zoom dispatch, express delivery, urban logistics, courier services"
+         />
+         <HeroSection />
+         <OurOfferings />
+         <RiderHighlight />
+         <UseCases />
+         <Reviews />
+         <Partnership />
+         <ClosureUI />
+         <AnimatePresence>
+            {showForm && (
+               <RegistrationForm onClose={() => setShowForm(false)} />
+            )}
+         </AnimatePresence>
+      </div>
+   )
 }
 
 export default Home;
