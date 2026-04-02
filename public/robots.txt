@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://zoomdispatch.com/sitemap.xml
+Sitemap: https://zoomdispatchng.com/sitemap.xml
